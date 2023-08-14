@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 700px;
+  display: flex;
+  background: hsl(30, 38%, 92%);
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 530px;
+  height: 400px;
+  display: flex;
+}
+
+.desktop {
+  border-radius: 20px 0 0 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: left;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0 20px 20px 0;
+}
+
+@font-face {
+  font-family: "Montserrat-VariableFont_wght";
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+.box2 h1 {
+  font-size: 14px;
+  font-family: "Montserrat-VariableFont_wght", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fraunces_9pt_Soft-Black";
+  src: url(fonts/Fraunces/static/Fraunces_144pt-Black.ttf);
+}
+
+.box2 h2 {
+  font-size: 35px;
+  line-height: 33px;
+  font-family: "Fraunces_9pt_Soft-Black";
+  color: hsl(212, 21%, 14%);
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+.box2 p {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat-Light";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.container-prices {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cash1 {
+  font-size: 30px;
+  font-family: "Fraunces_9pt_Soft-Black";
+  color: hsl(158, 36%, 37%);
+}
+
+.cash2 {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat-Light";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat-Bold";
+  background: hsl(158, 44%, 21%);
+  color: hsl(0, 0%, 100%);
+  padding: 0 55px;
+}
+
+@media screen and (max-width: 565px) {
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .box2 {
+    width: 100%;
+    height: 45%;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0;
+  }
+
+  .box2 h1 {
+    margin: 20px 0 0 20px;
+  }
+
+  .box2 h2 {
+    margin: 20px 0 0 20px;
+  }
+
+  .box2 p {
+    margin: 20px 20px 0 20px;
+  }
+
+  .container-prices {
+    margin: 20px 0 0 20px;
+    padding-right: 40%;
+  }
+
+  .button {
+    margin: 0 20px 10px 20px;
+  }
+}

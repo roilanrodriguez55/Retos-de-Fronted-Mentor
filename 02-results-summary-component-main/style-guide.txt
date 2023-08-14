@@ -1,0 +1,47 @@
+# Guía de estilo de Front-end
+
+## Diseño
+
+Los diseños fueron creados con las siguientes dimensiones:
+
+- Móvil: 375px
+- Escritorio: 1440px
+
+## Colores
+
+### Primarios
+
+- Rojo claro: hsl(0, 100%, 67%)
+- Amarillo anaranjado: hsl(39, 100%, 56%)
+- Verde turquesa: hsl(166, 100%, 37%)
+- Azul cobalto: hsl(234, 85%, 45%)
+
+## Degradados
+
+- Azul pizarra claro (fondo): hsl(252, 100%, 67%)
+- Azul real claro (fondo): hsl(241, 81%, 54%)
+
+- Azul violeta (círculo): hsla(256, 72%, 46%, 1)
+- Azul persa (círculo): hsla(241, 72%, 46%, 0)
+
+### Neutros
+
+- Blanco: hsl(0, 0%, 100%)
+- Azul pálido: hsl(221, 100%, 96%)
+- Lavanda claro: hsl(241, 100%, 89%)
+- Gris azul oscuro: hsl(224, 30%, 27%)
+
+### Notas
+
+Utiliza la transparencia para obtener las variaciones de color necesarias para que coincidan con el diseño. Sugerencia: investiga el uso de  `hsla()` .
+
+## Tipografía
+
+### Texto del cuerpo
+
+- Tamaño de fuente (párrafos): 18px
+
+### Fuente
+
+- Familia: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Pesos: 500, 700, 800
