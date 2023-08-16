@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(185, 75%, 39%);
+}
+
+.container {
+    background: white;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wall {
+    height: 280px;
+    border-bottom: 2px solid hsla(0, 0%, 59%,0.2);
+}
+
+.img {
+    width: 350px;
+    height: 140px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    border-radius: 20px 20px 0 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+.person img {
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: "KumbhSans-Bold";
+    src: url(fonts/static/KumbhSans-Bold.ttf);
+}
+
+.name {
+    font-family: "KumbhSans-Bold";
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: "KumbhSans-Medium";
+    src: url(fonts/static/KumbhSans-Medium.ttf);
+}
+
+.name span {
+    font-family: "KumbhSans-Medium";
+    color: hsl(0, 0%, 59%);
+}
+
+@font-face {
+    font-family: "KumbhSans-Regular";
+    src: url(fonts/static/KumbhSans-Regular.ttf);
+}
+
+.place {
+    font-family: "KumbhSans-Regular";
+    color: hsl(0, 0%, 59%);
+}
+
+.fallowers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+@font-face {
+    font-family: "KumbhSans-Bold";
+    src: url(fonts/static/KumbhSans-Bold.ttf);
+}
+
+.fallowers div {
+    font-family: "KumbhSans-Bold";
+    color: hsl(229, 23%, 23%);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.fallowers div span {
+    font-family: "KumbhSans-Regular";
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 90%;
+        /* min-width: 290px; */
+        height: auto;
+
+        /* Con esto se evi */
+        resize: none;
+        overflow: hidden;
+    }
+
+    .wall {
+        width: ;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        width: 100%;
+    height: 100%;
+    }
+}
