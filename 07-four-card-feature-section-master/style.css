@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 60px auto;
+}
+
+main div {
+  background: rgb(170, 155, 155);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  background: hsl(0, 0%, 98%);
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url(fonts/Poppins-Thin.ttf);
+}
+
+main div h1 {
+  font-family: "Poppins-Thin";
+  font-size: 23px;
+  color: hsl(234, 12%, 34%);
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+main div h2 {
+  font-family: "Poppins-SemiBold";
+  font-size: 23px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(fonts/Poppins-Light.ttf);
+}
+
+main div p {
+  font-family: "Poppins-Light";
+  font-size: 15px;
+  max-width: 300px;
+  align-self: center;
+  margin-bottom: 60px;
+  color: hsl(229, 6%, 66%);
+}
+
+main section {
+  max-width: 100%;
+  height: 200px;
+  background: hsl(0, 0%, 98%);
+  margin-bottom: 25px;
+  box-shadow: 5px 25px 30px hsl(229, 6%, 66%);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+main section h1 {
+  font-family: "Poppins-SemiBold";
+  color: hsl(234, 12%, 34%);
+}
+
+main section p {
+  font-family: "Poppins-Light";
+  font-size: 15px;
+  color: hsla(229, 6%, 66%, 0.8);
+}
+
+main section img {
+  width: auto;
+  height: 60px;
+  position: relative;
+  top: 35px;
+  left: 220px;
+}
+
+.supervisor {
+  border-top: hsl(180, 62%, 55%) 5px solid;
+}
+
+.team-builder {
+  border-top: hsl(0, 78%, 62%) 5px solid;
+}
+
+.karma {
+  border-top: hsl(34, 97%, 64%) 5px solid;
+}
+
+.calculator {
+  border-top: hsl(212, 86%, 64%) 5px solid;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    display: grid;
+    grid-template-rows: 200px repeat(4, 150px);
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  main div {
+    flex-wrap: nowrap;
+    grid-column: 1 / span 4;
+  }
+
+  main div h1 {
+    font-size: 30px;
+  }
+
+  main div h2 {
+    font-size: 30px;
+  }
+
+  main div p {
+    max-width: 500px;
+  }
+
+  main section {
+    margin: 0 30px;
+  }
+
+  main .supervisor {
+    grid-row: 3/5;
+    grid-column: 1/2;
+  }
+
+  main .team-builder {
+    grid-row: 2/4;
+    grid-column: 2/3;
+  }
+
+  main .karma {
+    grid-row: 4/6;
+    grid-column: 2/3;
+  }
+
+  main .calculator {
+    grid-row: 3/5;
+    grid-column: 3/4;
+  }
+}
