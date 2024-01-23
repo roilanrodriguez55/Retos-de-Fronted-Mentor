@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 280px;
+  width: 450px;
+  background-color: brown;
+}
+
+.side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side--left {
+  background-color: hsla(256, 72%, 46%, 1);
+}
+
+.side--left h2 {
+}
+
+.side--left__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("fonts/HankenGrotesk-Italic-VariableFont_wght.ttf");
+}
+
+.side--left__circle h3 {
+  font-size: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: rgb(255, 255, 255);
+}

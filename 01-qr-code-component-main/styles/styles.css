@@ -20,7 +20,10 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px 5px 50px hsl(220, 3%, 65%);
+  /* El primer valor del box-shadow es en el eje x (derecha +, izquierda-), el 2do valor es el
+  eje y (abajo +, arriba -), el cuarto valor indica el blur con que se ejecutará y el 4to valor
+  es el color que se dará a la sombra */
+  box-shadow: 10px 10px 50px hsl(220, 3%, 65%);
   margin: auto;
 }
 
@@ -39,7 +42,7 @@ img {
 }
 
 .text1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding: 0 25px;
@@ -47,21 +50,19 @@ img {
 }
 
 .text2 {
-    font-family: 'Outfit', sans-serif;
-    margin-top: 10px;
-    font-size: 13px;
-    padding: 0 15px;
-    color: hsl(220, 15%, 55%);
+  font-family: "Outfit", sans-serif;
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 0 15px;
+  color: hsl(220, 15%, 55%);
 }
 
-@media screen and (max-width:375px) {
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-items: center;
-      margin: 50px 50px;
-    }
-
-
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 50px 50px;
+  }
 }
